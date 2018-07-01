@@ -1,0 +1,7 @@
+precision mediump float;
+uniform float uAlpha;
+varying vec4 frontColor;
+void main () {
+	gl_FragColor = frontColor;
+	gl_FragColor.a = uAlpha;
+}

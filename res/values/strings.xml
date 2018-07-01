@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+		<string name="app_name">Hourglass Timer</string>
+		<string name="alarm">alarm</string>
+		<string name="vibration">vibrator</string>
+		<string name="start">start</string>
+		<string name="cancel">cancel</string>
+		<string name="dialogInform">dialog</string>
+		<string name="ok">OK</string>
+		<string name="minutesPassed">{0} minute timer finished.</string>
+		<string name="minuteTimer">{0} minute timer</string>
+		<string name="min">{0} min.</string>
+		<string name="handToHandTitle">hand to hand</string>
+		<string name="flowerITitle">balloon flower</string>
+		<string name="bambooTitle">bamboo</string>
+		<string name="roomTitle">room</string>
+		<string name="heartsTitle">hearts</string>
+		<string name="on">ON</string>
+		<string name="off">OFF</string>
+
+
+</resources>

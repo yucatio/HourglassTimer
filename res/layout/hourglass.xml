@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<com.yukaapplications.hourglass.view.HourglassView
+				android:id="@+id/hourglassView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		/>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="right" >
+
+
+
+
+			<ImageView
+					android:id="@+id/alarmIcon"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_margin="2dp"
+					android:src="@drawable/transparent"/>
+
+			<ImageView
+						android:id="@+id/vibrationIcon"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+						android:layout_margin="2dp"
+						android:src="@drawable/transparent" />
+
+			<ImageView
+					android:id="@+id/infoIcon"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_margin="2dp"
+					android:src="@drawable/transparent" />
+		</LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+		<string name="app_name">見て楽しむ砂時計タイマー</string>
+		<string name="alarm">アラーム</string>
+		<string name="vibration">バイブレータ</string>
+		<string name="start">スタート</string>
+		<string name="cancel">キャンセル</string>
+		<string name="dialogInform">ダイアログ通知</string>
+		<string name="ok">OK</string>
+		<string name="minutesPassed">{0}分経過しました</string>
+		<string name="minuteTimer">{0}分タイマー</string>
+		<string name="min">{0}分</string>
+		<string name="handToHandTitle">hand to hand</string>
+		<string name="flowerITitle">キキョウ</string>
+		<string name="bambooTitle">bamboo</string>
+		<string name="roomTitle">room</string>
+		<string name="heartsTitle">ハート</string><string name="on">ON</string>
+		<string name="off">OFF</string>
+
+
+</resources>
