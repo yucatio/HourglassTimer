@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 13
+    buildToolsVersion "28.0.1"
+
+    defaultConfig {
+        applicationId "com.yukaapplications.hourglass.activity"
+        minSdkVersion 10
+        targetSdkVersion 10
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation files('libs/GoogleAdMobAdsSdk-6.1.0.jar')
+}
