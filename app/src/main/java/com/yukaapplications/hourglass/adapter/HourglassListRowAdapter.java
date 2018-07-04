@@ -18,7 +18,7 @@ public class HourglassListRowAdapter extends ArrayAdapter<HourglassListActivity.
 	private int resourceId;
 	private List<HourglassListActivity.HourglassListRow> items;
 	private LayoutInflater inflater;
-	OnClickListener listener;
+	private OnClickListener listener;
 
 	public HourglassListRowAdapter(Context context, int resourceId, List<HourglassListActivity.HourglassListRow> items) {
 		this(context, resourceId, items, null);
