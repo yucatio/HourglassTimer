@@ -1,8 +1,11 @@
+# Built application directory
+release/
+
 # Gradle files
 .gradle/
 build/
 
-# Local configuration file (sdk path, etc)
+# Local configuration file
 local.properties
 
 # IntelliJ
