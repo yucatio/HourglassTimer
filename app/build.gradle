@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "28.0.1"
+
+    defaultConfig {
+        applicationId "com.yukaapplications.hourglass.activity"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.1"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-ads:15.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

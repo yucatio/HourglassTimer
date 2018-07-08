@@ -54,14 +54,14 @@
 								android:gravity="center">
 						</GridView>
 				</FrameLayout>
-				<com.google.ads.AdView
+				<com.google.android.gms.ads.AdView
+								xmlns:ads="http://schemas.android.com/apk/res-auto"
 								android:id="@+id/adView"
 								android:layout_width="match_parent"
 								android:layout_height="50dp"
 								android:layout_gravity="center_horizontal"
 								android:layout_marginTop="10dp"
-								ads:adUnitId="a1503664380acc0"
 								ads:adSize="BANNER"
-								ads:loadAdOnCreate="true" />
+								ads:adUnitId="ca-app-pub-4201929114261424/5295579797"/>
 		</LinearLayout>
 </TabHost>

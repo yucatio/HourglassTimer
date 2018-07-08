@@ -16,6 +16,9 @@ import android.widget.GridView;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.yukaapplications.hourglass.adapter.HourglassListRowAdapter;
 import com.yukaapplications.hourglass.maker.HourglassMaker;
 
@@ -25,6 +28,8 @@ public class HourglassListActivity extends TabActivity {
 	private static final List<HourglassListActivity.HourglassListRow> oneMinList = new ArrayList<HourglassListActivity.HourglassListRow>();
 	private static final List<HourglassListActivity.HourglassListRow> threeMinList = new ArrayList<HourglassListActivity.HourglassListRow>();
 	private static final List<HourglassListActivity.HourglassListRow> fiveMinList = new ArrayList<HourglassListActivity.HourglassListRow>();
+
+	private AdView mAdView;
 
 	static {
 		oneMinList.add(new HourglassListRow(HourglassMaker.ROOM_1MIN, R.drawable.room_thumbnail, R.string.roomTitle));
@@ -52,6 +57,12 @@ public class HourglassListActivity extends TabActivity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.hourglass_list);
+
+		// Ad setting
+		MobileAds.initialize(this, "ca-app-pub-4201929114261424~2342113392");
+		mAdView = (AdView) findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 
 		// TabHostクラス初期設定
 		TabHost tabHost = getTabHost();

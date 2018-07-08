@@ -14,7 +14,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 
 public class SandField {
-	private static final byte NO_MOVAE = 0;
+	private static final byte NO_MOVE = 0;
 	private static final byte TOP    = 1;
 	private static final byte RIGHT  = 2;
 	private static final byte BOTTOM = 4;
@@ -31,13 +31,13 @@ public class SandField {
 		// 3 下左
 		BOTTOM, BOTTOM, BOTTOM, BOTTOM, BOTTOM, LEFT, LEFT, LEFT,
 		// 4 上右左
-		NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, RIGHT, LEFT,
+		NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, RIGHT, LEFT,
 		// 5 右左
-		NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, RIGHT, LEFT,
+		NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, RIGHT, LEFT,
 		// 6 上左
-		NO_MOVAE, NO_MOVAE, NO_MOVAE, LEFT, LEFT, LEFT, LEFT, LEFT,
+		NO_MOVE, NO_MOVE, NO_MOVE, LEFT, LEFT, LEFT, LEFT, LEFT,
 		// 7 左
-		NO_MOVAE, NO_MOVAE, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT,
+		NO_MOVE, NO_MOVE, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT,
 		// 8 上右下
 		BOTTOM, BOTTOM, BOTTOM, BOTTOM, BOTTOM, RIGHT, RIGHT, RIGHT,
 		// 9 右下
@@ -47,13 +47,13 @@ public class SandField {
 		// 11 下
 		BOTTOM, BOTTOM, BOTTOM, BOTTOM, BOTTOM, BOTTOM, BOTTOM, BOTTOM,
 		// 12 上右
-		NO_MOVAE, NO_MOVAE, NO_MOVAE, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,
+		NO_MOVE, NO_MOVE, NO_MOVE, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,
 		// 13 右
-		NO_MOVAE, NO_MOVAE, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,
+		NO_MOVE, NO_MOVE, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT,
 		// 14 上
-		NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, TOP,
+		NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, TOP,
 		// 15
-		NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE, NO_MOVAE,
+		NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE,
 	};
 
 	private int width;
@@ -132,7 +132,7 @@ public class SandField {
 	 * 砂を移動します
 	 */
 	public void move() {
-		Arrays.fill(sandMoveTo, NO_MOVAE);
+		Arrays.fill(sandMoveTo, NO_MOVE);
 		sandsMoveToList.clear();
 
 		// 動く方向の決定
