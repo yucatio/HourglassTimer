@@ -17,3 +17,6 @@ local.properties
 .idea/dictionaries
 .idea/libraries
 .idea/caches
+
+# Google Services
+google-services.json
