@@ -16,4 +16,4 @@ A beautiful hourglass(sandglass) for android. Enjoy sand falling.
 Place google-service.json on app/ folder. You can get this file from Firebase.
 
 ### Before release
-Replace adUnitId placed in layout/activity_tetmas.xml to YOUR_AD_UNIT_ID
+Replace adUnitId placed in layout/hourglass_list.xml to YOUR_AD_UNIT_ID
