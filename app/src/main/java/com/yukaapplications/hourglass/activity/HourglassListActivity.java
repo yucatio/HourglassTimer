@@ -19,6 +19,8 @@ import android.widget.TabHost.TabSpec;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.yukaapplications.hourglass.adapter.HourglassListRowAdapter;
 import com.yukaapplications.hourglass.maker.HourglassMaker;
 
@@ -59,8 +61,12 @@ public class HourglassListActivity extends TabActivity {
 		setContentView(R.layout.hourglass_list);
 
 		// Ad setting
-		MobileAds.initialize(this, "ca-app-pub-4201929114261424~2342113392");
-		mAdView = (AdView) findViewById(R.id.adView);
+		MobileAds.initialize(this, new OnInitializationCompleteListener() {
+			@Override
+			public void onInitializationComplete(InitializationStatus initializationStatus) {
+			}
+		});
+		mAdView = findViewById(R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().build();
 		mAdView.loadAd(adRequest);
 
